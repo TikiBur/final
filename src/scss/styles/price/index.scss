@@ -1,0 +1,310 @@
+    .price {
+
+    &-content {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        background-color: #F8F8F8;
+    }
+
+    &-content__swiper {
+        padding: 0 20px;
+        margin-top: 20px;
+    } 
+
+    &__button {
+        display: none;
+    }
+
+    &-content__line {
+        display: none;
+    }
+
+    &__swiper-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: visible;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__swiper-slide {
+        display: block;
+        flex-shrink: 0;
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 6px;
+        transition: transform 0.3s ease;
+        width: 260px;  
+        height: 200px;
+    }
+
+    &__swiper-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;  
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 14px;
+        color: #7e7e82;
+        margin: 0;
+        margin-top: 6px;
+    }
+
+    &__title-price {
+        font-weight: 500;
+        font-size: 14px;
+        color: #7e7e82;
+        margin: 0;
+        margin-top: 6px;
+    }
+
+    &__title-time {
+        font-weight: 500;
+        font-size: 14px;
+        color: #7e7e82;
+        margin: 0;
+        margin-top: 6px;
+    }
+
+    &__title-price-main {
+        font-weight: 500;
+        font-size: 14px;
+        color: #7e7e82;
+        margin: 0;
+        margin-top: 6px;
+    }
+
+    &__title-time-main {
+        font-weight: 500;
+        font-size: 14px;
+        color: #7e7e82;
+        margin: 0;
+        margin-top: 6px;
+    }
+
+    &__title:first-child {
+        margin-top: 0;
+    }
+
+    &__text {
+        margin-bottom: 5px;
+        margin-top: 5px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.28571;
+        letter-spacing: 0.01em;
+        color: #1b1c21;
+    }
+
+    &__text-price {
+        margin-bottom: 5px;
+        margin-top: 5px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.28571;
+        letter-spacing: 0.01em;
+        color: #1b1c21;
+    }
+
+    &__text-time {
+        margin-bottom: 5px;
+        margin-top: 5px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.28571;
+        letter-spacing: 0.01em;
+        color: #1b1c21;
+    }
+
+    &__text:last-child {
+        margin-top: 0;
+    }
+
+    &__date-btn {
+        display: flex;
+        justify-content: space-between;
+        width: 230px;
+    }
+
+    &__swiper-button {
+        background: #ff3e79;
+        border-radius: 16px;
+        width: 119px;
+        height: 32px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__swiper-button-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    &__swiper-button-text {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    &-content__swiper-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    &-content__nds {
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+
+    &-content__button {
+        padding: 0 20px;
+        margin-top: 20px;
+        text-align: left;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    &-content__button-img {
+        transform: translate(5px, 2px);
+    }
+
+    &__swiper-button:hover {
+        opacity: 0.5;
+    }
+
+    &__swiper-button:active {
+        opacity: 0.2;
+    }
+
+    &-content__button:hover {
+        opacity: 0.5;
+    }
+
+    &-content__button:active {
+        opacity: 0.2;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .price-content__swiper-pagination {
+        display: none;
+    }
+
+    .price__swiper-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .price__swiper-slide {
+        position: relative;
+        width: 100%;
+        height: 85px;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .price__swiper-slide:first-child {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .price__swiper-slide:last-child {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .price__swiper-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        padding-right: 20px;
+        padding-top: 0;
+    }
+
+    .price__text {
+        width: 350px;
+    }
+
+    .price__title {
+        position: absolute;
+        z-index: 100;
+        top: -38px;
+        display: inline;
+    }
+
+    .price__title-price-main {
+        position: absolute;
+        z-index: 100;
+        top: -44px;
+        left: 410px;
+    }
+
+    .price__title-time-main {
+        position: absolute;
+        z-index: 100;
+        top: -44px;
+        left: 495px;
+        width: 100%;
+    }
+
+    .price-content__line {
+        display: block;
+        position: absolute;
+        z-index: 100;
+        top: 79px;
+        width: 100%;
+        height: 1px;
+        background: #eaeaea;
+    }
+
+    .unshow {
+        display: none;
+    }
+      
+    .price__swiper-slide.hidden {
+        display: none;
+    }
+
+    .price-content__nds {
+        width: 506px;
+    }
+}
+
+@media (min-width: 1366px) { 
+    .price__title-price-main {
+        position: absolute;
+        z-index: 100;
+        top: -44px;
+        left: 528px;
+    }
+
+    .price__title-time-main {
+        position: absolute;
+        z-index: 100;
+        top: -44px;
+        left: 735px;
+        width: 100%;
+    }
+}

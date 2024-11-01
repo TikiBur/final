@@ -1,0 +1,132 @@
+.brands {
+    
+    &-content {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        background-color: #F8F8F8;
+    }
+
+    &-content__swiper-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    &-content__swiper {
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+
+    &__swiper-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        overflow: visible;
+        margin-bottom: 20px;
+        transition: height 0.4s ease-in-out;
+    }
+      
+    &__swiper-slide {
+        display: block;
+        flex-shrink: 0;
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 6px;
+        transition: transform 0.3s ease;
+        width: 220px;
+    }
+      
+    &__swiper-button:hover {
+        opacity: 0.5;
+    }
+
+    &__swiper-button:active {
+        opacity: 0.2;
+    }
+
+    &__button {
+        display: none;
+    }
+}
+
+.swiper {
+
+    &-pagination-bullet {
+        background-color: #DDDDDD;
+        margin-left: 10px;
+        border-radius: 50%;
+    }
+
+    &__hp {
+        width: 55px;
+        height: 44px;
+    }
+
+    &-slide__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+      
+    &-pagination-bullet {
+        width: 12px;
+        height: 12px;
+    }
+      
+    &-pagination-bullet-active {
+        opacity: var(--swiper-pagination-bullet-opacity, 1);
+        background: #627386;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .brands-content__swiper-pagination {
+        display: none;
+    }
+
+    .brands__swiper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 0 10px 0 10px;
+    } 
+      
+    .brands__button {
+        display: block;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+    
+    .brands__button:hover {
+        opacity: 0.5;
+    }
+    
+    .brands-rotate-img {
+        transform: rotate(180deg);
+        transition: transform 0.6s ease;
+    }
+
+    .brands__swiper-slide.hidden {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1366px) {
+    .brands__swiper-slide.hidden {
+        display: block;
+    }
+      
+    .brands__swiper-slide.hiddenDesktop {
+        display: none;
+    }
+}
