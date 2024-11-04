@@ -446,20 +446,20 @@ template {
 
 @media (min-width: 1366px) {
   .burger-menu {
+    position: absolute;
     display: block;
-    position: fixed;
-    transform: translate(220px);
     max-width: 280px;
     min-height: 100%;
     overflow-y: hidden; }
   .burger-menu__container {
-    position: relative;
-    z-index: -10;
+    position: fixed;
     -webkit-animation-name: none;
             animation-name: none;
     box-shadow: none; }
   #burger-close-button {
-    display: none; } }
+    display: none; }
+  .header__buttons-wrapper_left {
+    display: flex; } }
 
 @-webkit-keyframes burger-open {
   from {
@@ -547,12 +547,11 @@ template {
     width: 50%; }
   .header__container {
     position: absolute;
-    top: -150px;
-    max-width: 1366px;
-    right: 0; }
+    z-index: 1000;
+    top: -200px; }
   .header__buttons-wrapper_active {
     position: absolute;
-    top: 173px;
+    top: 222px;
     right: -990px;
     display: flex;
     justify-content: center;
@@ -593,6 +592,7 @@ template {
   align-items: center;
   gap: 20px;
   list-style: none;
+  overflow-y: hidden;
   padding: 0 15px; }
 
 .info__scroller-wrapper {
@@ -602,7 +602,6 @@ template {
   flex-direction: row;
   align-items: center;
   width: 100%;
-  overflow-x: auto;
   white-space: nowrap;
   margin-top: 20px; }
 
@@ -627,8 +626,8 @@ template {
   height: clamp(5.625rem, calc(6.553rem + 9.211vw), 10rem); }
 
 .info__text-text.info__text-text-open {
-  overflow-y: scroll;
-  height: 280px; }
+  overflow-y: hidden;
+  height: 286px; }
 
 .info__text-button {
   display: flex;
@@ -1484,13 +1483,10 @@ a {
 
 @media (min-width: 1366px) {
   .body-container {
-    display: flex;
-    max-width: 1320px;
-    margin: 0 auto; }
-  .body__content-desktop {
     position: relative;
-    max-width: 100%;
-    margin: 0; } }
+    display: flex;
+    justify-content: center;
+    max-width: 1305px; } }
 
 
 /*# sourceMappingURL=style.css.map*/
