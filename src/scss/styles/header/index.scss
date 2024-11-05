@@ -1,0 +1,127 @@
+.header {
+    width: 100%;
+    position: relative;
+
+    &__buttons-wrapper_left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__line-right {
+        border-left: 2px  solid #eaeaea;
+        border-radius: 5px;
+        height: 32px;
+    }
+
+    &__line-left {
+        border-left: 2px  solid #eaeaea;
+        border-radius: 5px;
+        height: 32px;
+    }
+
+    &__buttons-wrapper_right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__buttons-wrapper_active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__button-wrapper-hover:hover {
+      opacity: 0.5;
+    }
+
+    &__button-wrapper-hover:active {
+      opacity: 0.2;
+    }
+}
+
+.show {
+    display: none;  
+}
+
+.desktop {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .show {
+      display: block;
+    }
+  
+    .header__buttons-wrapper_left {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .info__text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      padding: 20px 10px 20px 10px;
+    }
+  
+    .info__text-text-show {
+      display: block;
+      width: 83%;
+      padding-bottom: 5px;
+      margin: 0;
+    }
+  
+    .info__text-wrapper-image {
+      margin-bottom: 0;
+    }
+  
+    .info__text-text {
+      width: 83%;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .header {
+      width: 50%;
+    }
+
+    .header__container {
+      position: absolute;
+      z-index: 1000;
+      top: -200px;
+    }
+  
+    .header__buttons-wrapper_active {
+      position: absolute;
+      top: 222px;
+      right: -990px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .header__button-desktop {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .desktop {
+      display: block;
+    }
+}

@@ -1,0 +1,138 @@
+.technic {
+
+    &-content {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        background-color: #F8F8F8;
+    }
+
+    &-content__swiper {
+        padding: 0 20px;
+        margin-top: 20px;
+    } 
+
+    &__button {
+        display: none;
+    }
+
+    &__swiper-wrapper {
+        display: flex;
+        align-items: center;
+        overflow: visible;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__swiper-slide {
+        display: block;
+        flex-shrink: 0;
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 6px;
+        transition: transform 0.3s ease;
+        width: 240px;  
+        height: 160px;
+    }
+
+    &__swiper-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+        padding: 15px;
+    }
+
+    &__swiper-button {
+        transform: translateY(85px);
+    }
+
+    &-content__swiper-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    &__swiper-button:hover {
+        opacity: 0.5;
+    }
+
+    &__swiper-button:active {
+        opacity: 0.2;
+    }
+}
+
+.swiper {
+
+    &-pagination-bullet {
+        background-color: #DDDDDD;
+        margin-left: 10px;
+        border-radius: 50%;
+    }
+
+    &-pagination-bullet {
+        width: 12px;
+        height: 12px;
+    }
+      
+    &-pagination-bullet-active {
+        opacity: var(--swiper-pagination-bullet-opacity, 1);
+        background: #627386;
+    }
+  }
+
+
+@media (min-width: 768px) {
+    .technic-content__swiper-pagination {
+        display: none;
+    }
+
+    .technic-content__swiper {
+        padding-left: 15px;
+        width: 800px;
+    }
+
+    .technic__swiper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 10px;
+    }
+      
+    .technic__button {
+        display: block;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+    
+    .technic__button:hover {
+        opacity: 0.5;
+    }
+    
+    .technic-rotate-img {
+        transform: rotate(180deg);
+        transition: transform 0.6s ease;
+    }
+
+    .technic__swiper-slide.hidden {
+        display: none;
+    }
+}
+
+@media (min-width: 1366px) { 
+    .technic__swiper-slide.hidden {
+        display: block;
+    }
+
+    .technic__swiper-slide.hiddenDesktop {
+        display: none;
+    }
+
+    .technic-content__swiper {
+        width: 1025px;
+    }
+}

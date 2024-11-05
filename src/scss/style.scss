@@ -1,0 +1,118 @@
+@import '../fonts/font.scss';
+@import './styles/global/normalize.scss';
+@import './styles/burger-menu/index.scss';
+@import './styles/header/index.scss';
+@import './styles/service/index.scss';
+@import './styles/brands/index.scss';
+@import './styles/technic/index.scss';
+@import './styles/price/index.scss';
+@import './styles/footer/index.scss';
+@import './styles/phone-menu/index.scss';
+@import './styles/feedback-menu/index.scss';
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1366px;
+  font-family: "TTLakes", sans-serif;
+  color: #1b1c21;
+  overflow-x: hidden; 
+  background-color: #F8F8F8;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+p,
+h1,
+h2,
+li,
+a,
+ul,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  border: none;
+  background: none;
+  outline: none;
+  font-family: "TTLakes", sans-serif;
+  color: #1b1c21;
+}
+
+a {
+  color: #1b1c21;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  padding: 20px 15px;
+}
+
+.container-title {
+  width: 100%;
+}
+
+.content-title {
+  background: linear-gradient(to right, #eaeaea, #ffffff);
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  color: #7e7e82;
+  padding: 16px 20px;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 786px;
+  }
+}
+
+
+@media (min-width: 1366px) {
+
+  .body-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 1305px;
+  }
+}
+
